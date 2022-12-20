@@ -100,6 +100,8 @@ class SongViewTest(APITestCase):
             "Verifique se as informações retornadas no POST "
             + f"em `{self.BASE_URL}` estão corretas."
         )
+        print(expected_data)
+        print(resulted_data)
         self.assertDictEqual(expected_data, resulted_data, msg)
 
         # STATUS CODE
